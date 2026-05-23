@@ -21,4 +21,12 @@
                 ) );
             ?>
         </nav>
+        <div style="text-align:center; margin:1.2rem 0;">
+            <a class="btn-primary" href="https://wa.me/966555555555" style="margin-left:7px;" target="_blank">
+                تواصل واتساب
+            </a>
+            <a class="btn-primary" href="tel:0555555555">
+                اتصال مباشر
+            </a>
+        </div>
     </header>
