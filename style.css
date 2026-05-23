@@ -1,0 +1,158 @@
+/*!
+Theme Name: فني تركيب قفل ذكي في جميع أنحاء الرياض
+Theme URI: https://github.com/michellive2021-lab/wp
+Author: michellive2021-lab
+Author URI: https://github.com/michellive2021-lab
+Description: قالب ووردبريس احترافي لفني تركيب الأقفال الذكية في الرياض.
+Version: 1.0
+Text Domain: smartlock
+Tags: rtl-language-support, custom-logo, responsive-layout
+
+*/
+
+/* الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* إعدادات أساسية */
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+a { color: #0170c1; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn-primary {
+    background: #0170c1;
+    color: #fff!important;
+    padding: 0.8rem 2.5rem;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background: #005e97;
+}
+
+/* ترويسة الموقع */
+header {
+    background: #fff;
+    border-bottom: 1.5px solid #e5e5e5;
+    padding: 1.5rem 0 0.4rem 0;
+}
+header .site-title {
+    font-size: 2rem;
+    color: #0170c1;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* القائمة الرئيسية */
+.main-nav {
+    margin: 1rem 0;
+    text-align: center;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 0.8rem;
+}
+.main-nav ul li a {
+    color: #0170c1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.main-nav ul li a:hover {
+    background: #0170c1;
+    color: #fff;
+}
+
+/* البطل */
+.hero {
+    background: #0170c1;
+    color: white;
+    padding: 3rem 2rem 2rem 2rem;
+    text-align: center;
+}
+.hero h1 { font-size: 2.5em; font-weight: bold; }
+.hero p { font-size: 1.2em; margin-bottom: 1.5rem; }
+
+/* أقسام */
+.section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 950px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.04);
+}
+
+.section-title {
+    color: #0170c1;
+    margin-bottom: 1.2rem;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.services-list, .products-list, .reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.service-card, .product-card, .review-card {
+    background: #fafbfc;
+    border-radius: 9px;
+    box-shadow: 0 0 7px #eee;
+    padding: 1.8rem 1.2rem;
+    min-width: 210px;
+    flex: 1 1 210px;
+    max-width: 310px;
+    text-align: center;
+}
+
+.review-card {
+    direction: rtl;
+    font-size: 1.0em;
+}
+
+footer {
+    background: #222;
+    color: #eee;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .services-list, .products-list, .reviews-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .section {
+        padding: 1.1rem;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+}
