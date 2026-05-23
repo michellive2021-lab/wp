@@ -1,149 +1,151 @@
-/*!
+/*
 Theme Name: فني تركيب قفل ذكي في جميع أنحاء الرياض
 Theme URI: https://github.com/michellive2021-lab/wp
 Author: michellive2021-lab
 Author URI: https://github.com/michellive2021-lab
-Description: قالب ووردبريس احترافي لفني تركيب الأقفال الذكية في الرياض.
-Version: 1.0
+Description: قالب ووردبريس احترافي لفني قفل ذكي مع لمسة عصرية مستوحاة من amansmartlock.site
+Version: 2.0
 Text Domain: smartlock
 Tags: rtl-language-support, custom-logo, responsive-layout
-
 */
-
-/* الخطوط */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-
-/* إعدادات أساسية */
 body {
     font-family: 'Cairo', Arial, sans-serif;
-    background: #f4f7fa;
-    color: #222;
+    background: #eef2f6;
+    color: #232323;
     margin: 0;
     padding: 0;
     direction: rtl;
 }
-
-a { color: #0170c1; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
+.hero {
+    background: linear-gradient(110deg, #1774ae 0%, #01c2c3 100%);
+    color: white;
+    padding: 3.3rem 2rem 2rem 2rem;
+    text-align: center;
+    border-radius: 0 0 36px 36px;
+    box-shadow: 0 4px 12px #adbcc130;
+    margin-bottom: 1.5rem;
+}
+.hero h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+.hero p {
+    font-size: 1.14em;
+    margin-bottom: 1.5rem;
+}
 .btn-primary {
-    background: #0170c1;
-    color: #fff!important;
-    padding: 0.8rem 2.5rem;
-    border-radius: 25px;
+    background: #fbbe2c;
+    color: #213d51 !important;
+    padding: 1rem 2.9rem;
+    font-size: 1.15em;
+    border-radius: 27px;
     border: none;
     font-weight: bold;
-    transition: background 0.3s;
+    box-shadow: 0 3px 16px #0170c139;
+    transition: background 0.2s;
 }
 .btn-primary:hover {
-    background: #005e97;
+    background: #f4da72;
 }
-
-/* ترويسة الموقع */
-header {
-    background: #fff;
-    border-bottom: 1.5px solid #e5e5e5;
-    padding: 1.5rem 0 0.4rem 0;
-}
-header .site-title {
-    font-size: 2rem;
-    color: #0170c1;
-    font-weight: 700;
-    display: inline-block;
-}
-
-/* القائمة الرئيسية */
-.main-nav {
-    margin: 1rem 0;
-    text-align: center;
-}
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    background: #f0f0f0;
-    border-radius: 10px;
-}
-.main-nav ul li {
-    display: inline-block;
-    margin: 0 0.8rem;
-}
-.main-nav ul li a {
-    color: #0170c1;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 20px;
-}
-.main-nav ul li a:hover {
-    background: #0170c1;
-    color: #fff;
-}
-
-/* البطل */
-.hero {
-    background: #0170c1;
-    color: white;
-    padding: 3rem 2rem 2rem 2rem;
-    text-align: center;
-}
-.hero h1 { font-size: 2.5em; font-weight: bold; }
-.hero p { font-size: 1.2em; margin-bottom: 1.5rem; }
-
-/* أقسام */
 .section {
     background: #fff;
     margin: 2rem auto;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 20px;
     max-width: 950px;
-    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.04);
+    box-shadow: 0 1px 14px 0 #005e9730;
 }
-
 .section-title {
-    color: #0170c1;
-    margin-bottom: 1.2rem;
+    color: #1774ae;
+    background: #e5f4fa;
+    border-radius: 12px;
+    padding: .25em 40px;
+    margin: 0 auto 1.4rem auto;
+    width: fit-content;
     font-size: 2em;
     text-align: center;
-    border-bottom: 2px solid #eee;
-    display: inline-block;
-    padding-bottom: 5px;
+    border-bottom: 3px solid #01c2c3;
+    display: block;
 }
-
 .services-list, .products-list, .reviews-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    margin-top: 2rem;
+    gap: 30px;
 }
-
-.service-card, .product-card, .review-card {
-    background: #fafbfc;
-    border-radius: 9px;
-    box-shadow: 0 0 7px #eee;
-    padding: 1.8rem 1.2rem;
-    min-width: 210px;
-    flex: 1 1 210px;
-    max-width: 310px;
+.service-card, .product-card {
+    background: #fafdfe;
+    border-radius: 11px;
+    box-shadow: 0 2px 10px #178bba14;
+    padding: 2rem 1rem;
+    min-width: 190px;
+    flex: 1 1 180px;
+    max-width: 240px;
     text-align: center;
+    font-weight: 700;
+    color: #1774ae;
+    font-size: 1.11em;
+    line-height: 1.65;
+    position: relative;
 }
-
+.service-card:before {
+    content: "🔒";
+    font-size: 2em;
+    display: block;
+    margin-bottom: 0.4em;
+}
+.product-card:before {
+    content: "🛡️";
+    font-size: 2em;
+    display: block;
+    margin-bottom: 0.4em;
+}
 .review-card {
+    background: #fffde6;
+    box-shadow: 0 2px 10px #ffd80029;
+    color: #046b7e;
+    border-radius: 10px;
+    min-width: 210px;
+    max-width: 310px;
+    flex: 1 1 210px;
+    position: relative;
+    font-size: 1.05em;
+    padding: 1.7rem 1.1rem 1.1rem 1.1rem;
+    text-align: right;
     direction: rtl;
-    font-size: 1.0em;
 }
-
-footer {
-    background: #222;
-    color: #eee;
-    padding: 1.2rem;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 3rem;
+.review-card:before {
+    content: "\201C";
+    font-size: 2em;
+    color: #fbbe2c;
+    position: absolute;
+    left: 10px;
+    top: 5px;
 }
-
+.section:last-child input, 
+.section:last-child textarea {
+    min-width: 180px;
+    max-width: 400px;
+    width: 85%;
+    display: block;
+    margin: 0.4rem auto 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #e0e0e0;
+    padding: 0.6rem;
+    font-family: inherit;
+}
+.section:last-child button[type=submit] {
+    background: #fbbe2c;
+    color: #213d51;
+    border: none;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 0.8em 2em;
+    border-radius: 21px;
+    cursor: pointer;
+}
 @media (max-width: 768px) {
     .services-list, .products-list, .reviews-list {
         flex-direction: column;
@@ -152,7 +154,5 @@ footer {
     .section {
         padding: 1.1rem;
     }
-    .hero h1 {
-        font-size: 2em;
-    }
+    .hero h1 { font-size: 1.45em; }
 }
