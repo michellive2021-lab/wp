@@ -38,7 +38,12 @@
 
 <div class="section">
     <div class="section-title">تواصل معنا</div>
-    <?php echo do_shortcode('[contact-form-7 id=\"1\" title=\"نموذج تواصل\"]'); ?>
+    <form method="post" action="" style="max-width:420px; margin:auto; text-align:right;">
+        <input type="text" name="client_name" placeholder="الاسم" required>
+        <input type="tel" name="client_phone" placeholder="رقم الجوال" required>
+        <textarea name="client_message" placeholder="طلبك أو إستفسارك" required></textarea>
+        <button type="submit">إرسال الطلب</button>
+    </form>
     <p>أو اتصل مباشرة: <a href="tel:0555555555">0555555555</a></p>
 </div>
 
